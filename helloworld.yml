@@ -1,8 +1,10 @@
 ---
-- name: Hello World!
+- name: file!
   hosts: all
  
   tasks:
  
-  - name: Hello World!
-    shell: echo "Hi! Tower is working."
+  - name: Creating file
+    file:
+      path: "/tmp/devops_server.txt"
+      state: touch

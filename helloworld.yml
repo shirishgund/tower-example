@@ -1,5 +1,5 @@
 ---
-- name: file!
+- name: file
   hosts: all
  
   tasks:
@@ -7,4 +7,4 @@
   - name: Creating file
     file:
       path: "/tmp/devops_server.txt"
-      state: absent
+      state: present

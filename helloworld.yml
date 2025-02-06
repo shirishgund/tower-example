@@ -3,6 +3,6 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/root/test1.txt"
+      path: "/home/shirish/test1.txt"
       state: touch
     become: yes

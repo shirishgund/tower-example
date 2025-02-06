@@ -1,8 +1,12 @@
 ---
-- hosts: all
+- name: create file
+  hosts: localhost
+  become: yes
+  
   tasks:
   - name: Creating an empty file
     file:
-      path: "/home/shirish/test1.txt"
+      path: "/tmp/test1.txt"
       state: touch
-    become: yes
+      mode: '0644'
+    

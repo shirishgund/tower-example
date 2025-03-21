@@ -1,6 +1,6 @@
 ---
 - name: create file
-  hosts: localhost
+  hosts: server1.example.com
   become: yes
   
   tasks:

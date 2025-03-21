@@ -6,7 +6,7 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/tmp/test1.txt"
+      path: "/tmp/shirish.txt"
       state: touch
       mode: '0644'
     
